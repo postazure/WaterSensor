@@ -5,6 +5,7 @@ int prevWaterLevel = 0;
 
 void setup() {
   pinMode(sensorPin, INPUT);
+  Particle.publish("water_level", String("Your water sensor just connected."), PRIVATE);
 }
 
 void loop() {
